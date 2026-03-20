@@ -14,7 +14,7 @@ public class ValidAnagrams {
         for (char ch : t.toCharArray()) {
             count[ch - 'a']--;
         }
-
+        //normal way rather than using allzeros way
         for (int num : count) {
             if (num != 0) return false;
         }
